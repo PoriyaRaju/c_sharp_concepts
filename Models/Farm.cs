@@ -8,4 +8,9 @@ public class Farm
     public string Name { get; set; } = string.Empty;
 
     public bool IsOrganic { get; set; }
+
+    public void farmDetails()
+    {
+        Console.WriteLine($"{Id}\t{Name}\t{IsOrganic}");
+    }
 }
