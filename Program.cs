@@ -12,24 +12,24 @@ public class Program
 {
     public static void Main(String[] args)
     {
-        // Lesson:01
+        // Lesson:01 - Delegate and Multicast Delegate.
         //Multicast Delegate: One delegate can store multiple methods.
         // Notification notification = SendSms;
         // notification += SendSms;
         // notification += SendLog;
 
-        // Lesson:02
+        // Lesson:02 : Default Delegate
         // Action<T> - Default return type void , Predicate<T> - Default return type boolean , Fun<int,int> - last as return type parameter 
         Action<string> notification = SendEmail;
 
 
-        // Lesson:03
+        // Lesson:03 : Lambda Function
         // lambda function added...
         notification += message => Console.WriteLine($"Whatchapp Message :{message}");
 
         // notification("Farm created");
 
-        // Lesson:04
+        // Lesson:04 : Use case of lambda Function
         List<Farm> farms = new() {
             new Farm
             {
@@ -59,7 +59,7 @@ public class Program
         }
 
 
-        // Lesson:05
+        // Lesson:05 : Events. FarmService containts the event FarmCreated...
 
 
         var service = new FarmService();
