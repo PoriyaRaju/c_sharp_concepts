@@ -1,0 +1,10 @@
+# --- Build Outputs ---
+[Bb]in/
+[Oo]bj/
+
+# --- IDE / Editor Files ---
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
